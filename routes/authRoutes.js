@@ -36,7 +36,7 @@ router.post("/forgetPassword", async (req, res) => {
     to: email,
     subject: "Reset Password Link",
     text: "To Reset Password Please Click The Link",
-    html: `<a href="https://stark-dusk-55835.herokuapp.com/updatePassword/${token}/${email}">Click This Link to update Your Password</a>`,
+    html: `<a href="https://latest-grocery-app.herokuapp.com/updatePassword/${token}/${email}">Click This Link to update Your Password</a>`,
   };
 
   transporter
@@ -171,7 +171,7 @@ router.post("/adminSignup", async (req, res) => {
       cc: "Muhammad Haris",
       bcc: "AMmar Ahmed",
       text: "Please Verify Your Email By Clicking",
-      html: `<a href="https://stark-dusk-55835.herokuapp.com/confirmAdminSignup/${token}/${email}">Click This Link to verify your Email</a>`,
+      html: `<a href="https://latest-grocery-app.herokuapp.com/confirmAdminSignup/${token}/${email}">Click This Link to verify your Email</a>`,
     };
 
     transporter
